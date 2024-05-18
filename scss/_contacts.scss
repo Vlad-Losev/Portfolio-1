@@ -1,0 +1,156 @@
+.contacts {
+  margin-bottom: 100px;
+
+  @media(max-width: 768px) {
+    margin-bottom: 70px;
+  }
+
+  @media(max-width: 510px) {
+    margin-bottom: 50px;
+  }
+
+  &__container {
+    text-align: center;
+  }
+
+  &__title {
+    @include title-2;
+  }
+
+  &__block {
+    @include flex(space-around);
+    gap: 50px;
+
+    @media(max-width: 1024px) {
+      flex-direction: column;
+    }
+
+    @media(max-width: 768px) {
+      gap: 30px;
+    }
+
+    @media(max-width: 510px) {
+      align-items: start;
+      gap: 20px;
+    }
+
+    .contacts__description {
+      @include flex(center);
+      gap: 50px;
+
+      @media(max-width: 768px) {
+        gap: 30px;
+      }
+
+      @media(max-width: 510px) {
+        gap: 10px;
+      }
+
+      &__list {
+        font-size: 22px;
+        line-height: 26px;
+        text-align: left;
+
+        @media(max-width: 768px) {
+          font-size: 18px;
+          line-height: 22px;
+        }
+
+        @media(max-width: 510px) {
+          font-size: 16px;
+          line-height: 20px;
+        }
+
+        .contacts__description__item {
+          &:not(:last-child) {
+            margin-bottom: 20px;
+
+            @media(max-width: 510px) {
+              margin-bottom: 10px;
+            }
+          }
+        }
+      }
+    }
+
+    .contacts__list {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 1fr);
+      gap: 50px;
+
+      @media(max-width: 1024px) {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+      }
+
+      @media(max-width: 768px) {
+        gap: 15px;
+      }
+
+      @media(max-width: 510px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        gap: 10px;
+      }
+
+      img {
+        width: 40px;
+        height: 40px;
+
+        @media(max-width: 768px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+
+      .contacts__item {
+        display: inline-block;
+
+        &:hover {
+          .contacts__item__data__num {
+            color: $color-1;
+          }
+        }
+
+        a {
+          @include flex(start);
+          gap: 20px;
+
+          @media(max-width: 768px) {
+            gap: 10px;
+          }
+        }
+
+        &__data {
+          text-align: left;
+
+          &__text {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 10px;
+
+            @media(max-width: 768px) {
+              font-size: 20px;
+              line-height: 24px;
+              margin-bottom: 0;
+            }
+
+            @media(max-width: 510px) {
+              font-size: 18px;
+              line-height: 22px;
+            }
+          }
+
+          &__num {
+            font-size: 16px;
+            line-height: 20px;
+            transition: color .3s;
+          }
+        }
+      }
+    }
+    
+  }
+}

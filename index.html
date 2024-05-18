@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link type="image/x-icon" href="./img/favicon.png" rel="shortcut icon">
+  <link rel="stylesheet" href="./css/main.min.css">
+  <script defer src="./script/AOS.js"></script>
+  <script defer src="./script/swiper.js"></script>
+  <script defer src="./script/main.js"></script>
+</head>
+<body>
+  <div class="body__wrapper">
+    <header class="header">
+      <div class="header__wrapper">
+        <div class="container header__container">
+          <div class="header__block">
+            <a href="#section-1" class="hero__logo nav__link">VLADIUS #</a>
+    
+            <nav class="nav">
+              <ul class="nav__list" id="menu">
+                <li class="nav__item"><a href="#section-2" class="nav__link">Услуги</a></li>
+    
+                <li class="nav__item"><a href="#section-3" class="nav__link">Сервис</a></li>
+    
+                <li class="nav__item"><a href="#section-4" class="nav__link">Портфолио</a></li>
+    
+                <li class="nav__item"><a href="#section-5" class="nav__link">Контакты</a></li>
+              </ul>
+            </nav>
+    
+
+            <div class="header__burger" id="burger">
+              <span></span><span></span><span></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section hero" id="section-1">
+        <div class="hero__wrapper">
+          <div class="container hero__container">
+            <div class="hero__block">
+              <h1 class="hero__title">Профессиональная верстка&nbsp;сайтов</h1>
+  
+              <div class="hero__text">HTML-верстальщик - <span>Владислав&nbsp;Лосев</span></div>
+            </div>
+  
+            <a href="#section-5" class="hero__link">
+              <div class="hero__btn">
+                <span class="hero__btn__text">Связаться со мной</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+  
+      <section class="section about" id="section-2">
+        <div class="container about__container">
+          <h2 class="about__title" data-aos="fade-down" data-aos-delay="150" data-aos-once="true">Чем я занимаюсь</h2>
+  
+          <div class="about__cards">
+            <div class="about__card" data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
+              <div class="about__card__wrapper">
+                <div class="about__card__box">
+                  <img src="./img/about-1.svg" alt="Верстка" width="100px" height="100px">
+    
+                  <div class="about__card__title">Верстка</div>
+                </div>
+    
+                <div class="about__card__text">У вас есть готовый макет, который необходимо сверстать? Верстаю по макету, добавляю анимации, интерактив.</div>
+  
+                <ul class="about__list">
+                  <li class="about__item">Адаптивная верстка (если макет только под desktop, подгоню под tablet и mobile сам)</li>
+                  <li class="about__item">Кроссбраузерная (сайт будет одинаково отображаться в разных браузерах)</li>
+                  <li class="about__item">Чистый, читаемый, а главное работающий код</li>
+                </ul>
+              </div>
+            </div>
+  
+            <div class="about__card" data-aos="fade-left" data-aos-delay="250" data-aos-once="true">
+              <div class="about__card__wrapper">
+                <div class="about__card__box">
+                  <img src="./img/about-2.svg" alt="Верстка" width="100px" height="100px">
+    
+                  <div class="about__card__title">Доработка</div>
+                </div>
+    
+                <div class="about__card__text">У вас есть уже сайт, но нужно что то изменить или добавить? Вношу любые доработки после согласования.</div>
+  
+                <ul class="about__list">
+                  <li class="about__item">Корректировка стилей</li>
+                  <li class="about__item">Добавление элементов</li>
+                  <li class="about__item">Отладка блоков</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section class="section process" id="section-3">
+        <div class="container process__container">
+          <h2 class="process__title">Процесс верстки</h2>
+  
+          <div class="process__block">
+            <div class="process__box">
+              <div class="process__box__text">Верстка контента</div>
+  
+              <img src="./img/process-html.svg" alt="html">
+  
+              <div class="process__box__stick"></div>
+            </div>
+  
+            <div class="process__box">
+              <div class="process__box__text">Настройка стилей</div>
+  
+              <img src="./img/process-css.svg" alt="css">
+  
+              <div class="process__box__stick"></div>
+            </div>
+  
+            <div class="process__box">
+              <div class="process__box__text">Адаптивная верстка</div>
+  
+              <img src="./img/process-mobile.svg" alt="html">
+  
+              <div class="process__box__stick"></div>
+            </div>
+  
+            <div class="process__box">
+              <div class="process__box__text">Проверка в браузерах</div>
+  
+              <img src="./img/process-browser.svg" alt="html">
+  
+              <div class="process__box__stick"></div>
+            </div>
+  
+            <div class="process__box">
+              <div class="process__box__text">Устранение ошибок</div>
+  
+              <img src="./img/process-juk.svg" alt="html">
+            </div>
+          </div>
+  
+          <div class="process__subtitle">Инструменты, которые я использую</div>
+  
+          <div class="swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="./img/slide-html.svg" alt="HTML"></div>
+              <div class="swiper-slide"><img src="./img/slide-css.png" alt="CSS"></div>
+              <div class="swiper-slide"><img src="./img/slide-js.png" alt="JS"></div>
+              <div class="swiper-slide"><img src="./img/slide-sass.png" alt="SCSS"></div>
+              <div class="swiper-slide"><img src="./img/slide-vs-code.png" alt="VS code"></div>
+              <div class="swiper-slide"><img src="./img/slide-figma.png" alt="Figma"></div>
+            </div>
+  
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+    
+      <section class="section works" id="section-4">
+        <div class="container">
+          <h1 class="works__title" data-aos="fade-down" data-aos-delay="150" data-aos-once="true">Мои работы</h1>
+  
+          <div class="works__block">
+            <div class="works__block__box" data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
+              <picture class="works__img">
+                <source srcset="./img/works-1.webp" type="image/webp">
+                <img src="./img/works-1.png" alt="Проект-1" loading="lazy" width="1895" height="928">
+              </picture>
+  
+              <div class="works__block__box__text">Образовательный сайт <span>Future&nbsp;Academy</span></div>
+  
+              <a href="https://vlad-losev.github.io/future-academy/" class="works__link" target="_blank">Подробнее</a>
+            </div>
+            
+            <div class="works__block__box" data-aos="fade-left" data-aos-delay="250" data-aos-once="true">
+              <picture class="works__img">
+                <source srcset="./img/works-2.webp" type="image/webp">
+                <img src="./img/works-2.png" alt="Проект-1" loading="lazy" width="1895" height="928">
+              </picture>
+  
+              <div class="works__block__box__text works__block__box__text_2">Бар - Ресторан <span>Manhattan</span></div>
+  
+              <a href="https://vlad-losev.github.io/manhattan/" class="works__link" target="_blank">Подробнее</a>
+            </div>
+          </div>
+        </div>
+      </section>
+  
+      <section class="section contacts" id="section-5">
+        <div class="container contacts__container">
+          <h2 class="contacts__title" data-aos="fade-down" data-aos-delay="150" data-aos-once="true">Контакты</h2>
+  
+          <div class="contacts__block">
+            <div class="contacts__description" data-aos="fade-right" data-aos-delay="200" data-aos-once="true">
+              <picture>
+                <source srcset="./img/author.webp" type="image/webp">
+                <img src="./img/author.jpg" alt="Senor" loading="lazy" width="350" height="900">
+              </picture>
+  
+              <ul class="contacts__description__list">
+                <li class="contacts__description__item">Лосев Владислав</li>
+  
+                <li class="contacts__description__item">Возраст - 29 лет</li>
+  
+                <li class="contacts__description__item">г.Магнитогорск</li>
+  
+                <li class="contacts__description__item">HTML - верстальщик</li>
+  
+                <li class="contacts__description__item">Желаемая зар/плата - 50000р</li>
+              </ul>
+            </div>
+  
+            <ul class="contacts__list" data-aos="fade-left" data-aos-delay="250" data-aos-once="true">
+              <li class="contacts__item">
+                <a href="tel:79193233973">
+                  <img src="./img/contacts-phone.svg" alt="Телефон">
+  
+                  <div class="contacts__item__data">
+                    <div class="contacts__item__data__text">Телефон</div>
+                    
+                    <div class="contacts__item__data__num">+7 (919) 323 39 73</div>
+                  </div>
+                </a>              
+              </li>
+  
+              <li class="contacts__item">
+                <a href="https://vk.com/id178800510" target="_blank">
+                  <img src="./img/contacts-vk.svg" alt="Вконтакте">
+  
+                  <div class="contacts__item__data">
+                    <div class="contacts__item__data__text">Вконтакте</div>
+                    
+                    <div class="contacts__item__data__num">https://vk.com/id178800510</div>
+                  </div>
+                </a>              
+              </li>
+  
+              <li class="contacts__item">
+                <a href="mailto:Vladius1744@yandex.ru">
+                  <img src="./img/contacts-email.svg" alt="E-mail">
+  
+                  <div class="contacts__item__data">
+                    <div class="contacts__item__data__text">E-mail</div>
+                    
+                    <div class="contacts__item__data__num">Vladius1744@yandex.ru</div>
+                  </div>
+                </a>              
+              </li>
+  
+              <li class="contacts__item">
+                <a href="https://t.me/@Vladius174" target="_blank">
+                  <img src="./img/contacts-telegram.svg" alt="Telegram">
+  
+                  <div class="contacts__item__data">
+                    <div class="contacts__item__data__text">Telegram</div>
+                    
+                    <div class="contacts__item__data__num">@Vladius174</div>
+                  </div>
+                </a>              
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__text">© Portfolio 2024 | Losev Vladislav</div>
+      </div>
+    </footer>
+
+    <div class="bg-cosmos">
+      <div id="particles-js"></div><script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script><script src="http://threejs.org/examples/js/libs/stats.min.js"></script>
+    </div>
+  </div>
+  
+</body>
+</html>

@@ -1,0 +1,161 @@
+.about {
+  text-align: center;
+  margin-bottom: 100px;
+
+  @media(max-width: 768px) {
+    margin-bottom: 70px;
+  }
+
+  &__container {
+    min-height: 100vh;
+    @include flex(center);
+    flex-direction: column;
+  }
+
+  &__title {
+    @include title-2;
+  }
+
+  &__cards {
+    @include flex(center);
+    gap: 70px;
+
+    @media(max-width: 1024px) {
+      gap: 30px;
+    }
+
+    @media(max-width: 768px) {
+      flex-direction: column;
+    }
+    
+    .about__card {
+      background-color: rgba(4, 55, 74, .8);
+      border-radius: 10px;
+
+      .about__card__wrapper {
+        max-width: 440px;
+        height: 250px;
+        background-image: linear-gradient(45deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+        background-size: 200%;
+        border-radius: 10px;
+        position: relative;
+        transition: .5s;
+        padding: 15px 20px 30px;
+
+        @media(max-width: 1024px) {
+          height: 290px;
+          padding: 10px;
+        }
+
+        @media(max-width: 768px) {
+          height: 250px;
+        }
+
+        @media(max-width: 510px) {
+          height: 230px;
+        }
+  
+        &:hover {
+          -webkit-animation: animateborder 3s ease infinite paused;
+          animation: animateborder 3s ease infinite paused;
+          -webkit-animation-play-state: running;
+          animation-play-state: running;
+          transform: translate(-20px, -20px);
+
+          @media(max-width: 510px) {
+            transform: translate(-10px, -10px);
+          }
+
+          .about__card__text {
+            transform: translateY(-100px);
+            opacity: 0;
+          }
+
+          .about__list {
+            opacity: 1;
+          }
+        }
+
+        @keyframes animateborder {
+          0% {
+            background-position: 0;
+          }
+
+          50% {
+            background-position: 100%;
+          }
+
+          100% {
+            background-position: 0;
+          }
+        }
+  
+        .about__card__box {
+          display: flex;
+          gap: 50px;
+          margin-bottom: 15px;
+
+          @media(max-width: 510px) {
+            img {
+              width: 70px;
+              height: 70px;
+            }
+          }
+  
+          .about__card__title {
+            font-size: 24px;
+            font-weight: 700;
+            line-height: 28px;
+            padding-top: 10px;
+
+            @media(max-width: 510px) {
+              font-size: 22px;
+              line-height: 26px;
+            }
+          }
+        }
+  
+        .about__card__text {
+          font-size: 18px;
+          line-height: 22px;
+          font-weight: 700;
+          text-align: left;
+          transition: .5s;
+
+          @media(max-width: 510px) {
+            font-size: 14px;
+            line-height: 18px;
+          }
+        }
+
+        .about__list {
+          font-size: 16px;
+          line-height: 18px;
+          text-align: left;
+          position: absolute;
+          top: 120px;
+          opacity: 0;
+          transition: .5s;
+
+          @media(max-width: 510px) {
+            font-size: 14px;
+            line-height: 16px;
+            top: 85px;
+          }
+
+          .about__item {
+            position: relative;
+            padding-left: 25px;
+            margin-bottom: 10px;
+
+            &::before {
+              content: '</>';
+              position: absolute;
+              left: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
